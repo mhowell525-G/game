@@ -82,7 +82,7 @@ class Player:
         else:
             self.on_ground = False
         
-        overlapping_items = self.canvas.find_overlapping(pos[0]. pos[1]. pos[2]. pos[3])
+        overlapping_items = self.canvas.find_overlapping(pos[0], pos[1], pos[2], pos[3])
         
         if self.square in overlapping_items:
             print(f"Game Over")
@@ -97,7 +97,6 @@ class Player:
                 
         
         
-        self.x_velocity = 0
         self.canvas.after(20, self.update)
         
         
